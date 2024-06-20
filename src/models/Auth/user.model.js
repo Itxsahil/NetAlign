@@ -28,7 +28,7 @@ const userSchema = new Schema(
             lowercase: true,
             trim: true
         },
-        isEmailVarified: {
+        isEmailVerified: {
             type: Boolean,
             default: false
         },
@@ -41,10 +41,10 @@ const userSchema = new Schema(
         resetPasswordExpires: {
             type: Date
         },
-        emailVarificationToken: {
+        emailVerificationToken: {
             type: String
         },
-        emailVarificationExpires: {
+        emailVerificationExpires: {
             type: Date
         }
     },
