@@ -5,7 +5,7 @@
  * @returns {string} - HTML content
  */
 export const generateVerificationHtml = (username, verificationUrl) => {
-    return `
+  return `
         <div style="font-family: Arial, sans-serif; line-height: 1.6;">
             <h2>Hello, ${username}!</h2>
             <p>Thank you for registering. Please verify your email address by clicking the link below:</p>
@@ -22,7 +22,7 @@ export const generateVerificationHtml = (username, verificationUrl) => {
  * @returns {string} - Plain text content
  */
 export const generateVerificationText = (username, verificationUrl) => {
-    return `
+  return `
         Hello, ${username}!
     
         Thank you for registering. Please verify your email address by clicking the link below:
