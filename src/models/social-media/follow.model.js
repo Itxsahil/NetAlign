@@ -4,12 +4,12 @@ import mongoose, { Schema } from 'mongoose';
 const followSchema = new Schema(
     {
         following: {
-            type: String,
-            required: true,
+            type: mongoose.Types.ObjectId,
+            ref: 'User',
         },
         followedBy: {
-            type: String,
-            required: true,
+            type: mongoose.Types.ObjectId,
+            ref: 'User',
         },
     },
     {
